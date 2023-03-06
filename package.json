@@ -1,0 +1,20 @@
+{
+  "name": "atomic-pagination",
+  "version": "1.0.0",
+  "description": "wip",
+  "main": "index.js",
+  "scripts": {
+    "cov": "vitest --coverage",
+    "dev": "vitest",
+    "test": "vitest --run"
+  },
+  "keywords": [
+    "pagination"
+  ],
+  "author": "minojiro",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.29.2",
+    "vitest": "^0.29.2"
+  }
+}
