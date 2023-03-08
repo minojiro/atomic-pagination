@@ -3,7 +3,7 @@
 This package generates JavaScript objects for building pagination.
 Using the generated values, you can create your own pagination with modern web front-end frameworks such as React and Vue.
 
-## usage
+## Usage
 
 install package
 
@@ -46,17 +46,26 @@ const paginationData = computed(() => pagination({
 
 ## API
 
-### pagination()
+### pagination({setting})
 
-|setting|required|type|description|
+#### Setting(argument)
+
+|key|required|type|description|
 |---|---|---|---
 |current|o|number|number of current page|
 |last|o|number|number of last page|
 |first|-|number|number of first page|
-|rangeDisplayed|-|number|number of buttons displayed|
-|hasFirstAndLast|-|boolean|always display the first and last number of buttons or not (must be an odd number)|
+|rangeDisplayed|-|number|number of buttons displayed (must be an odd number)|
+|hasFirstAndLast|-|boolean|always display the first and last number of buttons or not|
 |hasEllipsis|-|boolean|display ellipsis(...) when numbers are not next to each other or not|
 
+#### Return value
+
+|key|type|description|
+|---|---|---|
+|previous|number or null|number of previous page|
+|next|number or null|number of next page|
+|buttons|array|{ type: "page" \| "last" \| "first" \| "ellipsis"; current: boolean; page: number; }[]|
 
 ## Contributing
 
