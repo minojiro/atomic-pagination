@@ -1,6 +1,6 @@
 {
   "name": "atomic-pagination",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wip",
   "main": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
