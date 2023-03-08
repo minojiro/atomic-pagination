@@ -7,6 +7,10 @@
   "files": [
     "/dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minojiro/atomic-pagination.git"
+  },
   "scripts": {
     "build": "pnpm run build:core && pnpm run build:types",
     "build:core": "esbuild ./src/index.ts --outfile=dist/index.esm.js --format=esm",
